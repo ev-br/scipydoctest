@@ -24,7 +24,28 @@ This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`
 Features
 --------
 
-* TODO
+
+Clone the repo and pip install it::
+
+
+    $ pip install .
+
+Test-drive::
+
+    $ cd tests
+    $ pytest -pno:doctest --doctest-modules  mod.py -v -s
+
+Here ``mod.py`` is simply::
+
+
+    def func():
+        """
+        >>> 2 / 3
+        0.667
+        """
+        pass
+
+Note that the doctest passes, even though it fails with the vanilla doctest module.
 
 
 Requirements
