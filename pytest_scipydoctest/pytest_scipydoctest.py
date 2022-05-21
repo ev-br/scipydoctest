@@ -585,8 +585,8 @@ def _init_checker_class() -> Type["doctest.OutputChecker"]:
     import doctest
     import re
 
-#    from _checker import Checker
-#    return Checker
+    from ._checker import Checker
+    return Checker
 
     class LiteralsOutputChecker(doctest.OutputChecker):
         # Based on doctest_nose_plugin.py from the nltk project

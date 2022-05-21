@@ -1,5 +1,6 @@
 import numpy as np
-
+import doctest
+import re
 
 # the namespace to run examples in
 DEFAULT_NAMESPACE = {'np': np}
@@ -65,9 +66,13 @@ class Checker(doctest.OutputChecker):
         if want == got:
             return True
 
-        # skip stopwords in source
-        if any(word in self._source for word in self.stopwords):
-            return True
+### FIXME: look for stopwords in want ? 
+
+####        import pdb; pdb.set_trace()
+
+###        # skip stopwords in source
+###        if any(word in self._source for word in self.stopwords):
+###            return True
 
         # skip random stuff
         if any(word in want for word in self.rndm_markers):
