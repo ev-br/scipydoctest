@@ -22,7 +22,7 @@ setup(
     url='https://github.com/ev-br/pytest-scipydoctest',
     description='Doctests on steroids',
     long_description=read('README.rst'),
-    py_modules=['pytest_scipydoctest'],
+    packages=['pytest_scipydoctest'],
     python_requires='>=3.5',
     install_requires=['pytest>=3.5.0'],
     classifiers=[
