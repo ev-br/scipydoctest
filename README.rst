@@ -20,6 +20,8 @@ Doctests on steroids
 
 This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`_'s `cookiecutter-pytest-plugin`_ template.
 
+**Note** This is a proof-of-concept experiment, likely to be postponed or abandoned in favor of  https://github.com/ev-br/scpdt
+
 
 Features
 --------
